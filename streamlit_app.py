@@ -49,7 +49,7 @@ except Exception as e:
 
 if schools_by_district:
     # 학교 소속된 교육청 선택
-    district = st.radio("학교가 소속된 교육청을 선택해주세요", options=schools_by_district)
+    district = st.radio("이름이 비슷한 학교가 많네요. 아래에서 학교가 소속된 교육청을 선택해주세요", options=schools_by_district)
     school_name = schools_by_district[district][0]
     school_code = schools_by_district[district][1]
     district_code = schools_by_district[district][2]
